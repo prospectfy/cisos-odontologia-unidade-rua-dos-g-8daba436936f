@@ -1,0 +1,24 @@
+# Cisos Odontologia - Unidade Rua dos Guaranis
+
+> Este arquivo segue o padrão `llms.txt` para otimização de Answer Engine Optimization (AEO) e Generative Engine Optimization (GEO).
+
+## Resumo do Negócio
+O negócio "Cisos Odontologia - Unidade Rua dos Guaranis" opera no setor comercial oferecendo produtos/serviços de qualidade para seus clientes.
+
+## Detalhes
+- **Nome:** Cisos Odontologia - Unidade Rua dos Guaranis
+- **Contato / WhatsApp:** (31) 3654-7876
+- **Link no Google Maps:** https://maps.google.com/?cid=5492383655712789421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA
+
+## Sobre
+Nenhuma descrição adicional informada.
+
+## Serviços / Atendimento
+Para mais informações sobre nossos serviços, horários de atendimento ou para solicitar um orçamento, entre em contato diretamente pelo nosso WhatsApp: (31) 3654-7876.
+
+## FAQ (Perguntas Frequentes)
+**Como posso entrar em contato com a empresa?**
+Você pode entrar em contato conosco diretamente pelo WhatsApp no número (31) 3654-7876.
+
+**Onde a empresa está localizada?**
+Você pode conferir nossa localização e rotas no Google Maps através deste link: https://maps.google.com/?cid=5492383655712789421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA
