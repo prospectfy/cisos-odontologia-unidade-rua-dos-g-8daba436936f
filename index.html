@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cisos Odontologia - Unidade Rua dos Guaranis | Clínica Odontológica</title>
+  <meta name="description" content="Atendimento odontológico na Cisos Odontologia - Unidade Rua dos Guaranis. Inicie seu contato diretamente pelo WhatsApp ou telefone.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "marca": "#0F9286",
+            "marca-forte": "#11746C",
+            "superficie": "#CDFAF1",
+            "tinta": "#111827",
+            "suave": "#6B7280"
+          },
+          fontFamily: {
+            "titulo": ["Poppins", "sans-serif"],
+            "corpo": ["Work Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+    .hero-title {
+      font-size: clamp(2.5rem, 5.2vw, 4.25rem);
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+    }
+    .section-title {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+    .hero-fade-in {
+      animation: heroEnter 600ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes heroEnter {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-superficie text-tinta font-corpo antialiased selection:bg-marca selection:text-superficie min-h-screen flex flex-col">
+
+  <!-- Navegação Principal -->
+  <header class="w-full bg-superficie/90 backdrop-blur-md sticky top-0 z-40 border-b border-marca/10 transition-colors">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#inicio" class="flex flex-col text-left group">
+        <span class="font-titulo text-xl font-bold tracking-tight text-tinta group-hover:text-marca transition-colors">
+          Cisos Odontologia
+        </span>
+        <span class="text-[11px] uppercase tracking-[0.08em] text-suave font-medium">
+          Unidade Rua dos Guaranis
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-tinta" aria-label="Navegação Principal">
+        <a href="#inicio" class="hover:text-marca transition-colors py-2">Início</a>
+        <a href="#unidade" class="hover:text-marca transition-colors py-2">A Unidade</a>
+        <a href="#atendimento" class="hover:text-marca transition-colors py-2">Atendimento</a>
+        <a href="#canais" class="hover:text-marca transition-colors py-2">Canais Oficiais</a>
+        <a href="https://wa.me/553136547876" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-h-[44px] px-5 py-2.5 rounded-lg bg-marca text-superficie font-semibold text-sm hover:bg-marca-forte transition-colors shadow-sm">
+          Falar no WhatsApp
+        </a>
+      </nav>
+
+      <!-- Mobile Navigation Drawer via Details/Summary -->
+      <div class="md:hidden">
+        <details class="relative">
+          <summary class="list-none p-2 rounded-lg cursor-pointer text-tinta hover:text-marca focus:outline-none focus:ring-2 focus:ring-marca" aria-label="Abrir menu de navegação">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </summary>
+          <div class="absolute right-0 top-12 w-64 bg-superficie border border-marca/20 rounded-xl shadow-xl p-5 flex flex-col gap-4 text-sm font-medium z-50">
+            <a href="#inicio" class="text-tinta hover:text-marca py-1">Início</a>
+            <a href="#unidade" class="text-tinta hover:text-marca py-1">A Unidade</a>
+            <a href="#atendimento" class="text-tinta hover:text-marca py-1">Atendimento</a>
+            <a href="#canais" class="text-tinta hover:text-marca py-1">Canais Oficiais</a>
+            <a href="https://wa.me/553136547876" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-h-[44px] px-4 py-2.5 rounded-lg bg-marca text-superficie font-semibold hover:bg-marca-forte transition-colors text-center mt-2">
+              Conversar no WhatsApp
+            </a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Seção 1: Hero Dividido Assimétrico -->
+    <!-- Proporções assimétricas (7 cols texto / 5 cols imagem), com sobreposição planejada e 4 elementos textuais na 1ª dobra mobile -->
+    <section id="inicio" class="relative pt-8 pb-16 md:pt-16 md:pb-28 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          
+          <!-- Plano 1 (Copy & Conversão): Proporção ampla de 7 colunas -->
+          <div class="lg:col-span-7 flex flex-col items-start z-10 hero-fade-in">
+            <div class="inline-block mb-3">
+              <span class="text-[12px] font-semibold uppercase tracking-[0.08em] text-marca bg-superficie border border-marca/20 px-3.5 py-1.5 rounded-md">
+                Clínica Odontológica
+              </span>
+            </div>
+
+            <h1 class="hero-title font-titulo font-bold text-tinta mb-4 text-balance">
+              Cisos Odontologia Unidade Rua dos Guaranis
+            </h1>
+
+            <p class="text-base md:text-lg text-suave leading-[1.6] max-w-[58ch] mb-8">
+              Atendimento odontológico com estrutura acolhedora e contato direto com nossa equipe para orientar você.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+              <!-- CTA Principal (WhatsApp) -->
+              <a href="https://wa.me/553136547876" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-h-[48px] px-8 py-3.5 rounded-lg bg-marca text-superficie font-titulo font-semibold text-base hover:bg-marca-forte transition-colors shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-marca">
+                Iniciar conversa no WhatsApp
+              </a>
+
+              <!-- Ação de Ligação Direta -->
+              <a href="tel:3136547876" class="inline-flex items-center justify-center min-h-[48px] px-6 py-3.5 rounded-lg border border-marca/30 text-tinta font-titulo font-medium text-base hover:bg-marca/10 transition-colors">
+                Ligar (31) 3654-7876
+              </a>
+            </div>
+
+            <!-- Detalhe factual discreto -->
+            <div class="mt-8 pt-6 border-t border-marca/15 w-full flex items-center gap-6 text-xs text-suave font-medium">
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-marca" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Canal Oficial Verificado
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-marca" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                Resposta por Mensagem ou Chamada
+              </span>
+            </div>
+          </div>
+
+          <!-- Plano 2 (Fotografia Contextual): Proporção de 5 colunas com sobreposição assimétrica e sombra tingida -->
+          <div class="lg:col-span-5 relative mt-4 lg:mt-0">
+            <div class="relative lg:-ml-6 z-20">
+              <div class="relative rounded-xl overflow-hidden shadow-2xl shadow-marca/20 border border-marca/15 bg-superficie">
+                <img 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqqlbCH_TRGP1mvJN61LxJqAeRMc8meCmBOs_CJYYkT1etBfui01HVK3URGwmMFvqhwLADRfcusp1CCGQBq5faD7TwOJ8v4phvBVQpe1D3BlXGeMB4pU1goFDwUY0iAG20xBRZjY9wh1lJ5MjKN_ngrarlgyVPLJWkXeB4UWvL2iuM5Lt6PGnOq9k04JGQmk80ffBmegKNx14DRjwpabPquxlzTrt-BA0aQJP5gN4TZPNEkLFR-V8pUEaGvWHln_9ORnjysGG_q1I" 
+                  alt="Consultório odontológico contemporâneo e acolhedor com iluminação natural na Cisos Odontologia" 
+                  width="1200" 
+                  height="896" 
+                  class="w-full h-[360px] sm:h-[420px] lg:h-[460px] object-cover object-center"
+                />
+              </div>
+              <!-- Camada decorativa de sobreposição arquitetônica com raio idêntico -->
+              <div class="hidden lg:block absolute -bottom-5 -right-5 w-full h-full rounded-xl border border-marca/20 -z-10 pointer-events-none"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2: Contexto em Largura Ampla (A Unidade) -->
+    <section id="unidade" class="py-16 md:py-24 border-t border-marca/10 bg-superficie">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-marca block mb-3">
+            Estrutura & Cuidado
+          </span>
+          <h2 class="section-title font-titulo font-bold text-tinta mb-6">
+            Ambiente pensado para acolher cada paciente
+          </h2>
+          <p class="text-base md:text-lg text-suave leading-[1.65] mb-6">
+            A Cisos Odontologia - Unidade Rua dos Guaranis foi concebida para unir atenção odontológica humanizada e um espaço sereno. Nossa clínica prioriza a pontualidade, a clareza nas orientações e a tranquilidade durante cada etapa do seu atendimento.
+          </p>
+        </div>
+
+        <!-- Composição Assimétrica (Editorial) sem cards repetitivos -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+          <div class="md:col-span-7 bg-marca/5 border border-marca/15 rounded-xl p-8 flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-[0.08em] text-marca font-bold block mb-2">Comunicação Clara</span>
+              <h3 class="font-titulo text-xl md:text-2xl font-bold text-tinta mb-4">
+                Orientações acessíveis e sem burocracia
+              </h3>
+              <p class="text-suave text-base leading-[1.6]">
+                Tire suas dúvidas prévias sobre horários, consultas e esclarecimentos clínicos diretamente através dos nossos canais telefônicos e por WhatsApp.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-marca/10">
+              <a href="https://wa.me/553136547876" target="_blank" rel="noopener noreferrer" class="text-marca font-semibold text-sm hover:underline inline-flex items-center gap-1.5">
+                Consultar informações via WhatsApp &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-superficie border border-marca/20 rounded-xl p-8 flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-[0.08em] text-suave font-bold block mb-2">Conveniência</span>
+              <h3 class="font-titulo text-xl font-bold text-tinta mb-4">
+                Localização e Acesso
+              </h3>
+              <p class="text-suave text-base leading-[1.6]">
+                Instalada na Rua dos Guaranis, com trajeto acessível e suporte para conferir orientações de chegada diretamente no mapa interativo.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-marca/10">
+              <a href="https://maps.google.com/?cid=5492383655712789421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer" class="text-marca font-semibold text-sm hover:underline inline-flex items-center gap-1.5">
+                Visualizar no Google Maps &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 3: Atendimento e Fluxo de Contato -->
+    <section id="atendimento" class="py-16 md:py-24 border-t border-marca/10 bg-marca/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-marca block mb-3">
+              Passo a Passo
+            </span>
+            <h2 class="section-title font-titulo font-bold text-tinta">
+              Como funciona o primeiro contato
+            </h2>
+          </div>
+          <p class="text-suave text-base max-w-md leading-[1.6]">
+            Processo descomplicado para você organizar sua ida ao consultório sem atritos.
+          </p>
+        </div>
+
+        <!-- Lista Editorial Assimétrica -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 border-l-2 border-marca bg-superficie rounded-r-xl">
+            <span class="font-titulo text-2xl font-bold text-marca mb-2 block">01</span>
+            <h3 class="font-titulo text-lg font-bold text-tinta mb-2">Envio de Mensagem</h3>
+            <p class="text-suave text-sm leading-[1.6]">
+              Inicie a conversa via WhatsApp ou ligue para o número oficial (31) 3654-7876 informando sua necessidade.
+            </p>
+          </div>
+
+          <div class="p-6 border-l-2 border-marca/50 bg-superficie rounded-r-xl">
+            <span class="font-titulo text-2xl font-bold text-marca/70 mb-2 block">02</span>
+            <h3 class="font-titulo text-lg font-bold text-tinta mb-2">Orientações Iniciais</h3>
+            <p class="text-suave text-sm leading-[1.6]">
+              Nossa equipe fornece esclarecimentos a respeito das datas disponíveis e detalhes sobre a recepção na clínica.
+            </p>
+          </div>
+
+          <div class="p-6 border-l-2 border-marca/30 bg-superficie rounded-r-xl">
+            <span class="font-titulo text-2xl font-bold text-marca/50 mb-2 block">03</span>
+            <h3 class="font-titulo text-lg font-bold text-tinta mb-2">Atendimento Presencial</h3>
+            <p class="text-suave text-sm leading-[1.6]">
+              Compareça à Unidade Rua dos Guaranis para receber um acompanhamento cuidadoso e focado na sua saúde bucal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 4: Canais Oficiais Factualmente Confirmados -->
+    <section id="canais" class="py-16 md:py-24 border-t border-marca/10 bg-superficie">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mb-12">
+          <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-marca block mb-3">
+            Transparência & Dados Oficiais
+          </span>
+          <h2 class="section-title font-titulo font-bold text-tinta mb-4">
+            Canais de comunicação disponíveis
+          </h2>
+          <p class="text-base text-suave leading-[1.6]">
+            Utilize os pontos de contato e links oficiais confirmados para se conectar com a unidade.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- WhatsApp / Ligação -->
+          <div class="p-6 rounded-xl border border-marca/20 bg-superficie flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-marca/10 flex items-center justify-center text-marca mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+              </div>
+              <h3 class="font-titulo font-bold text-lg text-tinta mb-1">Telefone & WhatsApp</h3>
+              <p class="text-suave text-sm mb-4 leading-[1.6]">Linha direta para atendimento e mensagens instantâneas.</p>
+              <p class="font-titulo font-semibold text-base text-tinta mb-4">(31) 3654-7876</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <a href="https://wa.me/553136547876" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-h-[44px] px-4 py-2 rounded-lg bg-marca text-superficie font-semibold text-sm hover:bg-marca-forte transition-colors">
+                Chamar no WhatsApp
+              </a>
+              <a href="tel:3136547876" class="inline-flex items-center justify-center min-h-[44px] px-4 py-2 rounded-lg border border-marca/25 text-tinta font-medium text-sm hover:bg-marca/10 transition-colors">
+                Ligar Agora
+              </a>
+            </div>
+          </div>
+
+          <!-- Website Institucional -->
+          <div class="p-6 rounded-xl border border-marca/20 bg-superficie flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-marca/10 flex items-center justify-center text-marca mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+              </div>
+              <h3 class="font-titulo font-bold text-lg text-tinta mb-1">Portal Cisos</h3>
+              <p class="text-suave text-sm mb-4 leading-[1.6]">Website informado da rede Cisos Odontologia.</p>
+              <p class="font-titulo font-semibold text-base text-tinta mb-4">cisos.com.br</p>
+            </div>
+            <div>
+              <a href="https://cisos.com.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full min-h-[44px] px-4 py-2 rounded-lg border border-marca text-marca hover:bg-marca hover:text-superficie transition-colors font-semibold text-sm">
+                Acessar Website Oficial
+              </a>
+            </div>
+          </div>
+
+          <!-- Perfil no Google Maps -->
+          <div class="p-6 rounded-xl border border-marca/20 bg-superficie flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-marca/10 flex items-center justify-center text-marca mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              </div>
+              <h3 class="font-titulo font-bold text-lg text-tinta mb-1">Perfil no Google Maps</h3>
+              <p class="text-suave text-sm mb-4 leading-[1.6]">Confira a rota para a Unidade Rua dos Guaranis.</p>
+              <p class="font-titulo font-semibold text-base text-tinta mb-4">Cisos Odontologia</p>
+            </div>
+            <div>
+              <a href="https://maps.google.com/?cid=5492383655712789421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full min-h-[44px] px-4 py-2 rounded-lg border border-marca text-marca hover:bg-marca hover:text-superficie transition-colors font-semibold text-sm">
+                Abrir no Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 5: Fechamento Comercial / CTA Final -->
+    <section class="py-16 md:py-24 bg-superficie border-t border-marca/15">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <span class="text-[11px] font-semibold uppercase tracking-[0.08em] text-marca block mb-3">
+          Atendimento Direto
+        </span>
+        <h2 class="section-title font-titulo font-bold text-tinta mb-4 text-balance">
+          Pronto para conversar com a equipe da Cisos Odontologia?
+        </h2>
+        <p class="text-base md:text-lg text-suave leading-[1.6] max-w-xl mx-auto mb-8">
+          Envie sua mensagem pelo WhatsApp oficial ou telefone para receber orientações completas sobre sua visita.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/553136547876" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-h-[48px] px-8 py-3.5 rounded-lg bg-marca text-superficie font-titulo font-semibold text-base hover:bg-marca-forte transition-colors shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-marca w-full sm:w-auto">
+            Iniciar conversa no WhatsApp
+          </a>
+          <a href="tel:3136547876" class="inline-flex items-center justify-center min-h-[48px] px-6 py-3.5 rounded-lg border border-marca/30 text-tinta font-titulo font-medium text-base hover:bg-marca/10 transition-colors w-full sm:w-auto">
+            Ligar para (31) 3654-7876
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="bg-superficie border-t border-marca/20 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-center md:text-left">
+        <p class="font-titulo font-bold text-base text-tinta">Cisos Odontologia - Unidade Rua dos Guaranis</p>
+        <p class="text-xs text-suave mt-1">Clínica Odontológica | Telefone: (31) 3654-7876</p>
+      </div>
+
+      <div class="flex items-center gap-6 text-xs text-suave font-medium">
+        <a href="https://cisos.com.br/" target="_blank" rel="noopener noreferrer" class="hover:text-marca transition-colors">
+          Website Oficial
+        </a>
+        <a href="https://maps.google.com/?cid=5492383655712789421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer" class="hover:text-marca transition-colors">
+          Google Maps
+        </a>
+        <a href="https://wa.me/553136547876" target="_blank" rel="noopener noreferrer" class="hover:text-marca transition-colors">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
